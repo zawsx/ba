@@ -11,15 +11,46 @@
    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 <div class="header-container"><header class="wrapper clearfix"><h1 class="title">Buried Alive</h1>
-<nav><ul><li><a href="#">Buy Tickets</a></li><li><a href="#">The Venue</a></li></ul></nav></header></div>
-
+<nav><ul><li><a href="#">Buy Tickets</a></li><li><a href="#">Venues</a></li></ul></nav></header></div>
 <div class="main-container"><div class="main wrapper clearfix">
                 <article>
                     <header>
                         <h1>Synopsis</h1>
                         <p>Out of sight,  NOT out of mind.<br />From the beginning it is clear Angelica has done something horrific. She is seen to be what looks like burying a body. She is confronted by 'Damien' who to the eye looks like a regular person - but soon turns to be a part of her imagination. It becomes clear that Angelica is not burying a body at all- but in fact pieces of her past she is trying to run away from.</p>
                     </header>
-                    <section>
+
+<!-- HTML -->
+<section id="slide-1" class="homeSlide">
+    <div class="bcg"  data-center="background-position: 50% 0px;"  data-top-bottom="background-position: 50% -100px;"   data-anchor-target="#slide-1" >
+        <div class="hsContainer">
+            <div class="hsContent"  data-center="opacity: 1"  data-106-top="opacity: 0"  data-anchor-target="#slide-1 h2"  >
+                <h2>Fade out elements before <br>they leave viewport</h2>   </div>    </div> </div></section>
+<!-- HTML -->
+<section id="slide-2"><div class="bcg" data-0="background-color:rgb(1,27,59);"  data-top="background-color:(0,0,0);"   data-anchor-target="#slide-2">
+        <div class="hsContainer"><div class="hsContent"><h2 data--200-bottom="opacity: 0" data-center="opacity: 1" data-206-top="opacity: 1"  data-106-top="opacity: 0"
+                    data-anchor-target="#slide-2 h2" >Fade me in and out  </h2></div></div> </div></section>
+<!-- HTML -->
+<section id="slide-3" class="homeSlide" data-content-offset="50p"><div class="bcg" data-center="background-position: 0px 50%;"  
+	data-bottom-top="background-position: 0px 40%;"  data-top-bottom="background-position: -40px 50%;"   data-anchor-target="#slide-3">
+        <div class="hsContainer"><div class="hsContent"><div class="plaxEl"  data-106-top="opacity: 0" data-bottom="opacity: 1; position: fixed; top: 206px; width: 100%; left: 0;"  data--30p-top="opacity: 1;"  data--60p-top="opacity: 0;"   data-anchor-target="#slide-3">
+                    <h2>Fixed element fading in and out</h2> </div>  </div>  </div></div></section>
+<!-- HTML -->
+<section id="slide-4" class="homeSlide homeSlideTall" data-content-offset="90p"><div class="bcg"  data-center="background-position: 50% 0px;"  
+	data-bottom-top="background-position: 50% 100px;" data-top-bottom="background-position: 50% -100px;"   data-anchor-target="#slide-4">
+        <div class="curtainContainer"><div class="curtain"  data-bottom-top="opacity: 0"  data-106-top="height: 1%; top: -10%; opacity: 0;"
+		data-center="height: 100%; top: 0%; opacity: 0.5"  data-anchor-target="#slide-4"></div>
+            <div class="copy"   data-bottom-top="opacity: 0"  data--100-bottom="opacity: 0"  data--280-bottom="opacity: 1;"  data-280-top="opacity: 1;"
+                data-106-top="opacity: 0;"  data-anchor-target="#slide-4 .copy" >
+                <h2>Curtain effect while you scroll</h2>       </div>  </div> </div></section>
+<!-- HTML -->
+<section id="slide-5" class="homeSlide homeSlideTall2" data-content-offset="66p"><div class="bcg">&nbsp;</div><div class="bcg bcg2"  
+		data-bottom-top="opacity: 0;"  data--33p-top="opacity: 0;" data--66p-top="opacity: 1;"  data-anchor-target="#slide-5">
+        <div class="hsContainer"><div class="hsContent" data-bottom-top="opacity: 0;"  data-center="opacity: 1" data-anchor-target="#slide-5" >
+                <h2>Fixed element fading in and out</h2></div></div> </div> <div class="bcg bcg3" data-300-bottom="opacity: 0;"
+        data-100-bottom="opacity: 1;"        data-anchor-target="#slide-5"   >
+        <div class="hsContainer"><div class="hsContent"  data-100-bottom="opacity: 0;"  data-bottom="opacity: 1;" data-anchor-target="#slide-5" >
+                <h2>The End</h2> </div>  </div>  </div></section>
+				<section>
                         <h2>Indoor performance</h2>
                         <p>October 20th (Mon) and 21st (Tue): Moors Bar Theatre, Crouch End.</p>
                     </section>
@@ -33,7 +64,7 @@
                     </footer>
                 </article>
 
-                <aside>
+                <aside width="420" >
                     <h3>Trailer</h3>
                     <iframe width="420" height="315" src="//www.youtube.com/embed/QKZA5ZOf8oo" frameborder="0" allowfullscreen></iframe>
                 </aside>
@@ -42,7 +73,7 @@
         <div class="footer-container"><footer class="wrapper"><h3>A Limelight Production</h3></footer></div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script><script src="js/main.js"></script>
+        <script src="js/plugins.js"></script><script src="js/skrollr.js"></script><script src="js/main.js"></script><script src="js/waypoints.min.js"></script>
         <script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0]; e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));  ga('create','UA-45423678-1');ga('send','pageview');</script></body></html>

@@ -19,7 +19,26 @@ nav ul {margin: 0; padding: 0;} nav a {display: block; margin-bottom: 10px; padd
 /* ALL: IE Fixes */
 .ie7 .title {padding-top: 20px;}
 /* custom */
-
+.hsContainer { display: table;  table-layout: fixed;  width: 100%;  height: 100%;  overflow: hidden;  position: relative;  opacity: 0;}
+.hsContent { max-width: 450px;  margin: -150px auto 0 auto;  display: table-cell;  vertical-align: middle; color: #ebebeb;  padding: 0 8%; text-align: center}
+.bcg {background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover; height: 100%; width: 100%;}
+#slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-2 .bcg {background: none;  background-color: #010101;  height: 310px; text-align: center}
+#slide-3 .bcg {background-image:url('../img/bcg_slide-3.jpg')}
+.curtainContainer { width: 100%; height: 100%; position: relative;}
+.curtainContainer .curtain { width: 300%; height: 1px; background-color: #000000;  position: absolute; top: 25%; left: 0;  opacity: 0}
+.curtainContainer .copy {position: absolute; bottom: 30%; left: 0; width: 100%; text-align: center;}
+#slide-4 .bcg {background-image:url('../img/bcg_slide-4.jpg')}
+#slide-5 {position: relative;} #slide-5 .bcg {background-image:url('../img/bcg_slide-5.jpg')}
+#slide-5 .bcg2 {background-image:url('../img/bcg_slide-5b.jpg'); position: fixed; bottom: 0; left: 0;opacity: 0; z-index: 1}
+#slide-5 .bcg3 {background: none; background-color: #010101; position: fixed; bottom: 0; left: 0;  opacity: 0; z-index: 2}
+/* Navigation */
+#slideNav {display: none;  position: fixed;  right: 0;  top: 50%;  margin-top: -80px;  z-index: 11;}
+#slideNav ul {list-style: none;  color: #000000;  font-size: 13px;  text-align: center;}
+#slideNav li { width: 50px;  height: 50px;  line-height: 50px;  background-color: rgba(255,255,255,0.70);  margin-bottom: 1px;}
+.no-rgba  #slideNav li {background-color: #ffffff}
+#slideNav a {display: block; width: 50px;  height: 50px;  position: relative;  overflow: hidden;  text-decoration: none;  color: #000000;}
+#slideNav a.disabled { cursor: default;} /* custom ends */
 @media only screen and (min-width: 480px) {/* INTERMEDIATE: Menu */
 nav a {float: left; width: 27%;  margin: 0 1.7%;  padding: 25px 2%;  margin-bottom: 0;}
 nav li:first-child a {margin-left: 0; } nav li:last-child a {margin-right: 0;}
